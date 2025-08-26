@@ -1,259 +1,117 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="ру">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Как найти работу Senior Kotlin-разработчику</title>
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="css/agent-rick.webflow.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
-    <style>
-        :root {
-            --border-radius: 20px;
-            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        body {
-            font-family: Oswald, sans-serif;
-            line-height: 1.6;
-            color: #edfdfd;
-            background-color: #1e1622;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background-color: #bbe8e91a;
-            color: #edfdfd;
-            padding: 40px 0;
-            text-align: center;
-            margin-bottom: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-        }
-        
-        h1 {
-            font-size: 48px;
-            font-weight: 500;
-            line-height: 90%;
-            margin: 0;
-            padding: 0 20px;
-            color: #bbe8e9;
-        }
-        
-        section {
-            margin-bottom: 40px;
-            background-color: #bbe8e91a;
-            border-radius: var(--border-radius);
-            padding: 25px;
-        }
-        
-        h2 {
-            color: #bbe8e9;
-            letter-spacing: 0.5px;
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 100%;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-        
-        ul {
-            padding-left: 20px;
-        }
-        
-        li {
-            margin-bottom: 10px;
-            position: relative;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 120%;
-            color: #edfdfd;
-        }
-        
-        .error-item {
-            color: #e7a148;
-            font-weight: 500;
-        }
-        
-        .cta-section {
-            background-color: #bbe8e91a;
-            text-align: center;
-            padding: 40px;
-            border-radius: var(--border-radius);
-            margin-top: 50px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: #e7a148;
-            color: #edfdfd;
-            padding: 18px 28px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: all 0.3s;
-            font-size: 32px;
-        }
-        
-        .cta-button:hover {
-            background-image: linear-gradient(#0003, #0003);
-        }
-        
-        .help-section {
-            font-style: italic;
-            background-color: rgba(187, 232, 233, 0.1);
-        }
-        
-        .contact-info {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #edfdfd;
-            font-size: 18px;
-            line-height: 140%;
-            margin-top: 30px;
-        }
-        
-        p {
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 120%;
-            color: #edfdfd;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
-            
-            h2 {
-                font-size: 28px;
-            }
-            
-            section {
-                padding: 15px;
-            }
-            
-            li, p {
-                font-size: 18px;
-            }
-            
-            .cta-button {
-                font-size: 24px;
-                width: auto;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Как найти работу Senior Kotlin‑разработчику — Agent Rick</title>
+  <meta name="description" content="Памятка для Senior Kotlin Developer: что требуют на собеседованиях, типичные ошибки, где искать работу и как мы помогаем." />
+  <meta property="og:title" content="Как найти работу Senior Kotlin‑разработчику — Agent Rick" />
+  <meta property="ог:description" content="Что спрашивают на собеседованиях, частые ошибки синьоров, где искать работу и как мы помогаем." />
+  <meta name="color-scheme" content="dark light" />
+  <style>
+    :root{
+      --bg: #0b0f19; --surface: #121826; --text: #e6eaf2; --muted: #9aa7bd; --accent: #00e5a8; --accent-contrast:#051813; --border: rgba(255,255,255,0.08); --shadow: 0 6px 24px rgba(0,0,0,.35); --radius: 14px; --maxw: 880px;
+    }
+    @media (prefers-color-scheme: light){ :root{ --bg:#f7f9fc; --surface:#ffffff; --text:#0c1222; --muted:#5b6578; --border:rgba(0,0,0,.08); --shadow:0 6px 24px rgba(0,0,0,.08); } body{ background-image: radial-gradient(60vw 60vw at 20% -10%, #d7fff3 0%, rgba(0,0,0,0) 60%), radial-gradient(40vw 40vw at 100% 0%, #e6fff9 0%, rgba(0,0,0,0) 60%); } }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; background: var(--bg); color: var(--text); line-height:1.6; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-image: radial-gradient(70vw 70vw at 10% -10%, rgba(0,229,168,.12) 0%, rgba(0,0,0,0) 60%), radial-gradient(50vw 50vw at 120% 10%, rgba(0,229,168,.08) 0%, rgba(0,0,0,0) 60%); }
+    a{ color: var(--accent); text-decoration: none; } a:hover{ text-decoration: underline; }
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 28px 18px 80px; }
+    header.page-head{ margin: 18px 0 28px; }
+    h1{ font-size: clamp(28px, 3.5vw, 40px); line-height:1.15; margin: 10px 0 12px; }
+    .lead{ color: var(--muted); font-size: clamp(15px, 2.2vw, 18px); max-width: 60ch; }
+    .card{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); margin: 16px 0; }
+    .card h2{ font-size: 22px; margin: 0 0 10px; }
+    .card h3{ font-size: 18px; margin: 16px 0 8px; color: var(--muted); }
+    .card ul{ margin: 8px 0 0 22px; }
+    .card li{ margin: 6px 0; }
+    .cta{ margin: 28px 0 0; display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; background: var(--accent); color: var(--accent-contrast); border:0; border-radius: 12px; padding: 14px 18px; font-weight: 700; letter-spacing:.2px; cursor:pointer; box-shadow: 0 8px 26px rgba(0,229,168,.25); }
+    .btn:hover{ transform: translateY(-1px); box-shadow: 0 10px 30px rgba(0,229,168,.35); }
+    .btn svg{ width:18px; height:18px; }
+    .hint{ color: var(--muted); font-size: 14px; }
+    footer{ margin-top: 32px; color: var(--muted); font-size: 13px; text-align:center; }
+    @media (min-width: 860px){ .grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; } }
+  </style>
 </head>
-<body class="body">
-    <header>
-        <div class="container">
-            <h1>Как найти работу Senior Kotlin-разработчику</h1>
-        </div>
+<body>
+  <main class="wrap">
+    <header class="page-head">
+      <h1>Как найти работу Senior Kotlin‑разработчику</h1>
+      <p class="lead">Что требуют на собеседованиях, частые ошибки, где искать работу, что писать в резюме — и как мы помогаем выбрать из нескольких офферов.</p>
     </header>
-    
-    <div class="container">
-        <section>
-            <h2>Кто такой Senior Kotlin Developer</h2>
-            <ul>
-                <li>4+ лет опыта, в проде — не один релиз.</li>
-                <li>Архитектурное мышление, участие в дизайне систем.</li>
-                <li>Менторство/ревью кода, возможно — лидерство в команде.</li>
-                <li>Уверенное владение Android (Jetpack Compose, многомодульность) или backend (Ktor/Spring Boot, микросервисы).</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Что спрашивают на собеседованиях</h2>
-            <ul>
-                <li>Архитектура приложений: где MVP, где MVVM, где MVI и почему.</li>
-                <li>Баланс производительности и читаемости.</li>
-                <li>Сложные кейсы: работа с legacy, параллельная разработка, CI/CD пайплайны.</li>
-                <li>Android: Jetpack Compose, многомодульность, производительность, UX/UI паттерны.</li>
-                <li>Backend: распределённые системы, API-шлюзы, безопасность, мониторинг и логирование.</li>
-                <li>Поведенческие: как решал конфликты в команде, выстраивал процесс, защищал архитектурные решения.</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Частые ошибки синьоров</h2>
-            <ul>
-                <li class="error-item">❌ Преувеличение — выдаёшь себя за лида, но сыпешься на рефакторинге.</li>
-                <li class="error-item">❌ Мало конкретики в резюме (обобщённые фразы без контекста).</li>
-                <li class="error-item">❌ Переоценка своих требований — хочешь удалёнку с $100k, но без продуктовости.</li>
-                <li class="error-item">❌ Не готов к собеседованиям, всё забыл — думаешь, синьору можно "с порога".</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Где искать работу</h2>
-            <ul>
-                <li>Продуктовые компании с сильными командами.</li>
-                <li>Стартующие стартапы, если готов входить с долей.</li>
-                <li>Стаффинг-платформы (Toptal, Turing, Lemon.io), если интересен фриланс.</li>
-                <li>Через нетворк, LinkedIn, конференции, закрытые каналы с офферами.</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Что писать в резюме</h2>
-            <ul>
-                <li>Масштаб: "архитектура приложения для 10+ млн MAU", "руководство миграцией на Compose".</li>
-                <li>Ответственность: "инициировал рефакторинг слоёв", "вёл hiring middle-разработчиков".</li>
-                <li>Стек — не просто список, а с акцентом: что применял, где, зачем.</li>
-                <li>Короткие ссылки на pet/tech-блоги, если есть — ценится.</li>
-            </ul>
-        </section>
-        
-        <section class="help-section">
-            <h2>Как мы помогаем</h2>
-            <p>Мы не просто шлём резюме — мы подбираем компании, которые ищут сильных сеньоров с конкретным бэкграундом.<br>
-            Обычно ты выбираешь из 2–3 офферов в течение 1–1.5 месяцев — если готов к собесам и открыт к обратной связи.</p>
-        </section>
-        
-        <section class="cta-section">
-            <h2>Готовы сделать следующий шаг?</h2>
-            <p>Перейдите по ссылке, чтобы выбрать удобное для вас время для созвона:</p>
-            <a href="https://calendly.com/anatolt" class="cta-button">Записаться на консультацию</a>
-            
-            <div class="contact-info">
-                <p>Пожалуйста, укажите:</p>
-                <ul>
-                    <li>вашу <strong>актуальную почту</strong> — на неё придёт ссылка на звонок в Google Meet;</li>
-                    <li>ваш <strong>Telegram или WhatsApp</strong> — чтобы мы могли с вами связаться для уточнений.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Ещё материалы</h2>
-            <ul>
-                <li><a href="/kotlin-junior-developer.html">Как найти работу <b>Junior</b> Kotlin‑разработчику</a></li>
-                <li><a href="/kotlin-middle-developer.html">Как найти работу <b>Middle</b> Kotlin‑разработчику</a></li>
-            </ul>
-        </section>
-    </div>
-    
+    <section class="card">
+      <h2>Кто такой Senior Kotlin Developer</h2>
+      <ul>
+        <li>4+ лет опыта, в проде — не один релиз.</li>
+        <li>Архитектурное мышление, участие в дизайне систем.</li>
+        <li>Менторство/ревью кода, возможно — лидерство в команде.</li>
+        <li>Уверенное владение Android (Jetpack Compose, многомодульность) или backend (Ktor/Spring Boot, микросервисы).</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Что спрашивают на собеседованиях</h2>
+      <ul>
+        <li>Архитектура приложений: где MVP, где MVVM, где MVI и почему.</li>
+        <li>Баланс производительности и читаемости.</li>
+        <li>Сложные кейсы: работа с legacy, параллельная разработка, CI/CD пайплайны.</li>
+        <li>Android: Jetpack Compose, многомодульность, производительность, UX/UI паттерны.</li>
+        <li>Backend: распределённые системы, API-шлюзы, безопасность, мониторинг и логирование.</li>
+        <li>Поведенческие: как решал конфликты в команде, выстраивал процесс, защищал архитектурные решения.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Частые ошибки синьоров</h2>
+      <ul>
+        <li>❌ Преувеличение — выдаёшь себя за лида, но сыпешься на рефакторинге.</li>
+        <li>❌ Мало конкретики в резюме (обобщённые фразы без контекста).</li>
+        <li>❌ Переоценка своих требований — хочешь удалёнку с $100k, но без продуктовости.</li>
+        <li>❌ Не готов к собеседованиям, всё забыл — думаешь, синьору можно «с порога».</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Где искать работу</h2>
+      <ul>
+        <li>Продуктовые компании с сильными командами.</li>
+        <li>Стартующие стартапы, если готов входить с долей.</li>
+        <li>Стаффинг‑платформы (Toptal, Turing, Lemon.io), если интересен фриланс.</li>
+        <li>Через нетворк, LinkedIn, конференции, закрытые каналы с офферами.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Что писать в резюме</h2>
+      <ul>
+        <li>Масштаб: «архитектура приложения для 10+ млн MAU», «руководство миграцией на Compose».</li>
+        <li>Ответственность: «инициировал рефакторинг слоёв», «вёл hiring middle‑разработчиков».</li>
+        <li>Стек — не просто список, а с акцентом: что применял, где, зачем.</li>
+        <li>Короткие ссылки на pet/tech‑блоги, если есть — ценится.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Как мы помогаем</h2>
+      <p><em>Мы не просто шлём резюме — мы подбираем компании, которые ищут сильных сеньоров с конкретным бэкграундом. Обычно ты выбираешь из 2–3 офферов в течение 1–1.5 месяцев — если готов к собесам и открыт к обратной связи.</em></p>
+      <div class="cta">
+        <a class="btn" href="https://calendly.com/anatolt" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17l7.586-7.586V15h2V5h-10v2h5.586L5 14.586 7 17z" fill="currentColor"/></svg>
+          Записаться на консультацию
+        </a>
+        <span class="hint">Встреча пройдёт в Google Meet. Укажите актуальную почту и ваш Telegram/WhatsApp.</span>
+      </div>
+    </section>
+
+    <section>
+        <h2>Ещё материалы</h2>
+        <ul>
+            <li><a href="/kotlin-junior-developer.html">Как найти работу <b>Junior</b> Kotlin‑разработчику</a></li>
+            <li><a href="/kotlin-middle-developer.html">Как найти работу <b>Middle</b> Kotlin‑разработчику</a></li>
+        </ul>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>© 2025 Senior Kotlin Developer Career Guide</p>
-        </div>
+      <a href="/">Agent Rick HR</a> © <span id="y"></span>. Все права защищены.
     </footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
