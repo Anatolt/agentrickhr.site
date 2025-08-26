@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Как найти работу Middle Kotlin‑разработчику — Agent Rick</title>
+  <meta name="description" content="Памятка для Middle Kotlin Developer: что требуют на собеседованиях, типичные ошибки, где искать работу и как мы помогаем." />
+  <meta property="og:title" content="Как найти работу Middle Kotlin‑разработчику — Agent Rick" />
+  <meta property="og:description" content="Что спрашивают на собеседованиях, частые ошибки мидлов, где искать работу и как мы помогаем." />
+  <meta name="color-scheme" content="dark light" />
+  <style>
+    /* ===== Базовая палитра (под цвета текущего сайта) =====
+       Легко изменить в одном месте: */
+    :root{
+      --bg: #0b0f19;          /* тёмный фон */
+      --surface: #121826;     /* карточки/блоки */
+      --text: #e6eaf2;        /* основной текст */
+      --muted: #9aa7bd;       /* вторичный текст */
+      --accent: #00e5a8;      /* акцент (на сайте ярко‑зелёный/бирюзовый) */
+      --accent-contrast:#051813;
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 6px 24px rgba(0,0,0,.35);
+      --radius: 14px;
+      --maxw: 880px;
+    }
+
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f9fc; --surface:#ffffff; --text:#0c1222; --muted:#5b6578; --border:rgba(0,0,0,.08); --shadow:0 6px 24px rgba(0,0,0,.08);
+      }
+      body{ background-image: radial-gradient(60vw 60vw at 20% -10%, #d7fff3 0%, rgba(0,0,0,0) 60%), radial-gradient(40vw 40vw at 100% 0%, #e6fff9 0%, rgba(0,0,0,0) 60%); }
+    }
+
+    /* ===== Сброс/типографика ===== */
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-image: radial-gradient(70vw 70vw at 10% -10%, rgba(0,229,168,.12) 0%, rgba(0,0,0,0) 60%),
+                        radial-gradient(50vw 50vw at 120% 10%, rgba(0,229,168,.08) 0%, rgba(0,0,0,0) 60%);
+    }
+    a{ color: var(--accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    /* ===== Контейнер и шапка страницы ===== */
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 28px 18px 80px; }
+
+    header.page-head{ margin: 18px 0 28px; }
+    .badge{ display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:12px; color:var(--accent); background: rgba(0,229,168,.1); border:1px solid rgba(0,229,168,.25); padding:6px 10px; border-radius:999px; }
+    .badge::before{ content:""; width:8px; height:8px; border-radius:50%; background: var(--accent); box-shadow:0 0 16px var(--accent); }
+
+    h1{ font-size: clamp(28px, 3.5vw, 40px); line-height:1.15; margin: 10px 0 12px; }
+    .lead{ color: var(--muted); font-size: clamp(15px, 2.2vw, 18px); max-width: 60ch; }
+
+    /* ===== Карточки секций ===== */
+    .card{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); margin: 16px 0; }
+    .card h2{ font-size: 22px; margin: 0 0 10px; }
+    .card h3{ font-size: 18px; margin: 16px 0 8px; color: var(--muted); }
+    .card ul{ margin: 8px 0 0 22px; }
+    .card li{ margin: 6px 0; }
+
+    /* ===== CTA ===== */
+    .cta{ margin: 28px 0 0; display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; background: var(--accent); color: var(--accent-contrast); border:0; border-radius: 12px; padding: 14px 18px; font-weight: 700; letter-spacing:.2px; cursor:pointer; box-shadow: 0 8px 26px rgba(0,229,168,.25); }
+    .btn:hover{ transform: translateY(-1px); box-shadow: 0 10px 30px rgba(0,229,168,.35); }
+    .btn svg{ width:18px; height:18px; }
+
+    .hint{ color: var(--muted); font-size: 14px; }
+
+    /* ===== Нижний колонтитул ===== */
+    footer{ margin-top: 32px; color: var(--muted); font-size: 13px; text-align:center; }
+
+    /* ===== Адаптивные мелочи ===== */
+    @media (min-width: 860px){ .grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="page-head">
+      <h1>Как найти работу Middle Kotlin‑разработчику</h1>
+      <p class="lead">Что требуют на собеседованиях, частые ошибки, где искать работу, что писать в резюме — и как мы помогаем пройти путь до оффера.</p>
+    </header>
+
+    <section class="card">
+      <h2>Кто такой Middle Kotlin Developer</h2>
+      <ul>
+        <li>1.5–4 года опыта, есть релизы в проде, самостоятельная работа над фичами.</li>
+        <li>Уверенное владение Kotlin, опыт с Android (ViewModel, Coroutines, Jetpack) или backend (Ktor/Spring Boot, REST/gRPC).</li>
+        <li>Понимание архитектурных паттернов, опыт работы с тестами, CI/CD.</li>
+        <li>Участие в командной разработке, ревью кода, возможно — менторство джунов.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Что спрашивают на собеседованиях</h2>
+      <ul>
+        <li>Архитектура приложений: выбор паттернов, разделение ответственности.</li>
+        <li>Работа с асинхронностью, потоками, корутинами.</li>
+        <li>Опыт интеграции с внешними сервисами, API, работа с БД.</li>
+        <li>Тестирование: юнит‑тесты, мокирование, инструменты CI/CD.</li>
+        <li>Поведенческие: как решал сложные задачи, работал с legacy, взаимодействовал с командой.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Частые ошибки мидлов</h2>
+      <ul>
+        <li>❌ Недооценка soft skills — не может объяснить решения, не умеет договариваться.</li>
+        <li>❌ Слабое портфолио: мало конкретики, нет описания вклада в проекты.</li>
+        <li>❌ Переоценка уровня — претендует на синьора без уверенных знаний архитектуры.</li>
+        <li>❌ Не готов к вопросам по тестированию и CI/CD.</li>
+      </ul>
+    </section>
+
+    <section class="card grid">
+      <div>
+        <h2>Где искать работу</h2>
+        <ul>
+          <li>Продуктовые и аутсорс‑компании, где ценят самостоятельность.</li>
+          <li>Стартапы, где можно быстро расти и брать ответственность.</li>
+          <li>Через нетворк, профильные Telegram‑каналы, LinkedIn.</li>
+          <li>Рекомендации от бывших коллег, open source.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Что писать в резюме</h2>
+        <ul>
+          <li>Конкретные проекты: что делал, какой был результат, какие технологии применял.</li>
+          <li>Опыт оптимизации, внедрения новых инструментов, автоматизации.</li>
+          <li>Участие в ревью, менторстве, командных инициативах.</li>
+          <li>Ссылки на pet‑проекты, open source, если есть.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Как мы помогаем</h2>
+      <p><em>Мы помогаем найти работу в компаниях, где ценят самостоятельных мидлов, готовы давать интересные задачи и рост. Помогаем с резюме, готовим к собеседованиям, даём обратную связь по тестовым заданиям и портфолио.</em></p>
+      <div class="cta">
+        <a class="btn" href="https://calendly.com/anatolt" target="_blank" rel="noopener">
+          <!-- Иконка стрелки -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17l7.586-7.586V15h2V5h-10v2h5.586L5 14.586 7 17z" fill="currentColor"/></svg>
+          Записаться на консультацию
+        </a>
+        <span class="hint">Встреча пройдёт в Google Meet. Укажите актуальную почту и ваш Telegram/WhatsApp.</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Ещё материалы</h2>
+      <ul>
+        <li><a href="/kotlin-jun-dev.html">Как найти работу Junior Kotlin‑разработчику</a></li>
+        <li><a href="/kotlin-sen-dev.html">Как найти работу Senior Kotlin‑разработчику</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <a href="/">Agent Rick HR</a> © <span id="y"></span>. Все права защищены.
+    </footer>
+  </main>
+
+  <script>
+    // Год в футере
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
